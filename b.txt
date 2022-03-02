@@ -3,5 +3,7 @@ git init 初始化
 git status 检测当前文件夹所有文件状态
 git add 文件名.后缀名 表示要管理这个文件
 git add .表示要管理没有被管理的所有文件
+git commit -m '描述信息' 生成版本
 要点：
 1.使用git status 之后红色的文件表示没有被管理，绿色表示已经被管理
+2.
