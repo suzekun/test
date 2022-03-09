@@ -3,16 +3,23 @@ git init 初始化
 git status 检测当前文件夹所有文件状态
 git add 文件名.后缀名 表示要管理这个文件
 git add .表示要管理没有被管理的所有文件
+git config --global user.name '用户名'配置用户名
+git config --global user.email '邮箱'配置用户名
 git commit -m '描述信息' 生成版本
 git log 显示版本
+git reset --hard 版本 回退到某个版本
 要点：
 1.使用git status 之后红色的文件表示没有被管理，绿色表示已经被管理
 2.三种状态变化：
 。红色：新增文件或者修改了原文件 --》git add
 。绿色：git已经管理起来 --》git commit
 。生成版本：
-
+3.git三大区域：工作区（已管理的文件（自动）新写的文件/修改的文件）、（git add）暂存区、(git commit)版本库
 步骤：
 1.进入要管理的目录
 2.初始化
 3.检测当前目录下文件的状态
+4.管理指定文件（红变绿）
+5.个人信息配置：用户名、邮箱（仅需一次）
+6.生成版本
+7.查看版本
