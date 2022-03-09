@@ -7,7 +7,13 @@ git config --global user.name '用户名'配置用户名
 git config --global user.email '邮箱'配置用户名
 git commit -m '描述信息' 生成版本
 git log 显示版本
+git reflog 查看所有版本（包括回退前的版本）
 git reset --hard 版本 回退到某个版本
+git branch 显示当前所在分支
+git branch 分支名 在当前的master版本进行分支
+git checkout 分支名 切换到另外一个分支（就是切换到另一个环境，在新环境写代码是不会影响到master主干的）
+git merge 分支名 先切换到主干，然后将分支合并到主干上
+git branch -d 分支名 删除分支
 要点：
 1.使用git status 之后红色的文件表示没有被管理，绿色表示已经被管理
 2.三种状态变化：
